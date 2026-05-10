@@ -1,0 +1,27 @@
+[
+  {
+    "id": "mbp-intel-2019",
+    "brand": "Apple",
+    "model": "MacBook Pro 16\"",
+    "year": 2019,
+    "chip": "Intel Core i9",
+    "ram": "16GB",
+    "storage": "512GB SSD",
+    "color": "Space Gray",
+    "acquired": "2020-01",
+    "sold": "2022-03",
+    "image": "laptops/mbp-intel-2019.jpg"
+  },
+  {
+    "id": "mbp-m1-pro-2021",
+    "brand": "Apple",
+    "model": "MacBook Pro 14\"",
+    "year": 2021,
+    "chip": "M1 Pro",
+    "ram": "16GB",
+    "storage": "512GB SSD",
+    "color": "Space Gray",
+    "acquired": "2022-03",
+    "image": "laptops/mbp-m1-pro-2021.jpg"
+  }
+]

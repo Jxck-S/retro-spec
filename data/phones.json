@@ -1,0 +1,31 @@
+[
+  {
+    "id": "iphone-se-2020",
+    "brand": "Apple",
+    "model": "iPhone SE (2nd gen)",
+    "storage": "128GB",
+    "color": "Black",
+    "acquired": "2020-06",
+    "sold": "2021-11",
+    "image": "phones/iphone-se-2020.jpg"
+  },
+  {
+    "id": "iphone-13-pro",
+    "brand": "Apple",
+    "model": "iPhone 13 Pro",
+    "storage": "256GB",
+    "color": "Sierra Blue",
+    "acquired": "2021-11",
+    "sold": "2023-09",
+    "image": "phones/iphone-13-pro.jpg"
+  },
+  {
+    "id": "iphone-15-pro",
+    "brand": "Apple",
+    "model": "iPhone 15 Pro",
+    "storage": "256GB",
+    "color": "Black Titanium",
+    "acquired": "2023-09",
+    "image": "phones/iphone-15-pro.jpg"
+  }
+]

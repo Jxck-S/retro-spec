@@ -1,0 +1,25 @@
+[
+  {
+    "id": "2018-honda-civic",
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2018,
+    "trim": "Sport",
+    "color": "#B0B0B0",
+    "acquired": "2018-03",
+    "sold": "2022-08",
+    "notes": "First car. Manual transmission.",
+    "image": "cars/civic.jpg"
+  },
+  {
+    "id": "2022-toyota-tacoma",
+    "make": "Toyota",
+    "model": "Tacoma",
+    "year": 2022,
+    "trim": "TRD Off-Road",
+    "color": "#1B3A2B",
+    "acquired": "2022-09",
+    "notes": "Current truck.",
+    "image": "cars/tacoma.jpg"
+  }
+]
