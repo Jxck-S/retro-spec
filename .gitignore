@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# data branch files (managed separately, never commit to main)
+/data/*.json
+!/data/.gitkeep
+/public/images/
+!/public/images/.gitkeep
