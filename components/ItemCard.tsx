@@ -31,7 +31,7 @@ export default function ItemCard({ item, category }: Props) {
         </span>
       )}
 
-      <div className="relative h-32 w-40 flex-shrink-0 overflow-hidden rounded-xl bg-zinc-800 flex items-center justify-center sm:h-36 sm:w-52">
+      <div className="relative h-32 w-40 flex-shrink-0 overflow-hidden rounded-xl bg-white flex items-center justify-center sm:h-36 sm:w-52">
         <ImageWithFallback
           src={imageSrc ?? assetPath("/placeholder.svg")}
           alt={title}

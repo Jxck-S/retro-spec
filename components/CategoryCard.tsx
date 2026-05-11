@@ -25,7 +25,7 @@ export default function CategoryCard({ category, item, count }: Props) {
       href={`/${category}`}
       className="group flex flex-col overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 shadow-lg transition-all hover:border-zinc-600 hover:shadow-indigo-950/30 hover:scale-[1.01]"
     >
-      <div className="relative h-52 w-full bg-zinc-800 flex items-center justify-center overflow-hidden">
+      <div className="relative h-52 w-full bg-white flex items-center justify-center overflow-hidden">
         <ImageWithFallback
           src={imageSrc ?? assetPath("/placeholder.svg")}
           alt={title ?? LABELS[category]}
