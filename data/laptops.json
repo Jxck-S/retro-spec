@@ -27,5 +27,12 @@
     "year": 2012,
     "released": "2012-06",
     "image": "laptops/lenovo-z580.webp"
+  },
+  {
+    "id": "dell-inspiron-15-n5030",
+    "brand": "Dell",
+    "model": "Inspiron 15 N5030",
+    "year": 2010,
+    "released": "2010-01"
   }
 ]
