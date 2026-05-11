@@ -9,12 +9,33 @@ const geist = Geist({
   subsets: ["latin"],
 });
 
+const url = "https://rs.jackstech.net";
+
 export const metadata: Metadata = {
   title: {
     default: "retro-spec",
     template: "%s | retro-spec",
   },
   description: "A personal history of the cars, phones, and laptops I've owned.",
+  metadataBase: new URL(url),
+  openGraph: {
+    title: "retro-spec",
+    description: "A personal history of the cars, phones, and laptops I've owned.",
+    url,
+    siteName: "retro-spec",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "retro-spec",
+    description: "A personal history of the cars, phones, and laptops I've owned.",
+    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
