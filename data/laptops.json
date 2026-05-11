@@ -1,27 +1,31 @@
 [
   {
-    "id": "mbp-intel-2019",
+    "id": "macbook-pro-m4",
     "brand": "Apple",
-    "model": "MacBook Pro 16\"",
-    "year": 2019,
-    "chip": "Intel Core i9",
-    "ram": "16GB",
-    "storage": "512GB SSD",
-    "color": "Space Gray",
-    "acquired": "2020-01",
-    "sold": "2022-03",
-    "image": "laptops/mbp-intel-2019.jpg"
+    "model": "MacBook Pro M4 Pro",
+    "year": 2024,
+    "chip": "M4 Pro",
+    "released": "2024-11",
+    "acquired": "2025-06",
+    "notes": "Work machine.",
+    "image": "laptops/macbook-pro-m4.webp"
   },
   {
-    "id": "mbp-m1-pro-2021",
-    "brand": "Apple",
-    "model": "MacBook Pro 14\"",
-    "year": 2021,
-    "chip": "M1 Pro",
-    "ram": "16GB",
-    "storage": "512GB SSD",
-    "color": "Space Gray",
-    "acquired": "2022-03",
-    "image": "laptops/mbp-m1-pro-2021.jpg"
+    "id": "lenovo-c740",
+    "brand": "Lenovo",
+    "model": "IdeaPad C740",
+    "year": 2020,
+    "released": "2020-01",
+    "acquired": "2021-08",
+    "notes": "College laptop.",
+    "image": "laptops/lenovo-c740.webp"
+  },
+  {
+    "id": "lenovo-z580",
+    "brand": "Lenovo",
+    "model": "IdeaPad Z580",
+    "year": 2012,
+    "released": "2012-06",
+    "image": "laptops/lenovo-z580.webp"
   }
 ]

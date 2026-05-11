@@ -1,31 +1,51 @@
 [
   {
-    "id": "iphone-se-2020",
+    "id": "iphone-17-pro-max",
     "brand": "Apple",
-    "model": "iPhone SE (2nd gen)",
-    "storage": "128GB",
-    "color": "Black",
-    "acquired": "2020-06",
-    "sold": "2021-11",
-    "image": "phones/iphone-se-2020.jpg"
+    "model": "iPhone 17 Pro Max",
+    "released": "2025-09",
+    "acquired": "2026-04",
+    "image": "phones/iphone-17-pro-max.webp"
   },
   {
-    "id": "iphone-13-pro",
+    "id": "iphone-15",
     "brand": "Apple",
-    "model": "iPhone 13 Pro",
-    "storage": "256GB",
-    "color": "Sierra Blue",
-    "acquired": "2021-11",
-    "sold": "2023-09",
-    "image": "phones/iphone-13-pro.jpg"
+    "model": "iPhone 15",
+    "released": "2023-09",
+    "acquired": "2024-08",
+    "sold": "2026-04",
+    "image": "phones/iphone-15.webp"
   },
   {
-    "id": "iphone-15-pro",
+    "id": "iphone-13",
     "brand": "Apple",
-    "model": "iPhone 15 Pro",
-    "storage": "256GB",
-    "color": "Black Titanium",
-    "acquired": "2023-09",
-    "image": "phones/iphone-15-pro.jpg"
+    "model": "iPhone 13",
+    "released": "2021-09",
+    "acquired": "2022-01",
+    "sold": "2024-08",
+    "image": "phones/iphone-13.webp"
+  },
+  {
+    "id": "pixel-3a",
+    "brand": "Google",
+    "model": "Pixel 3a",
+    "released": "2019-05",
+    "image": "phones/pixel-3a.webp"
+  },
+  {
+    "id": "iphone-6s",
+    "brand": "Apple",
+    "model": "iPhone 6s",
+    "released": "2015-09",
+    "acquired": "2015-10",
+    "current": false,
+    "image": "phones/iphone-6s.webp"
+  },
+  {
+    "id": "iphone-4",
+    "brand": "Apple",
+    "model": "iPhone 4",
+    "released": "2010-06",
+    "image": "phones/iphone-4.webp"
   }
 ]
