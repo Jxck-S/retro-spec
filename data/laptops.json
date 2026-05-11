@@ -6,6 +6,7 @@
     "year": 2024,
     "chip": "Apple M4 Pro",
     "ram": "24 GB",
+    "screen": "16\"",
     "serial": "FVT4WWNNWG",
     "released": "2024-11",
     "acquired": "2025-06",
@@ -17,9 +18,13 @@
     "brand": "Lenovo",
     "model": "IdeaPad C740",
     "year": 2020,
+    "chip": "Intel Core i5-10210U",
+    "ram": "8 GB",
+    "storage": "256 GB",
+    "screen": "15.6\"",
     "released": "2020-01",
     "acquired": "2021-08",
-    "notes": "College laptop.",
+    "notes": "College laptop. Upgraded to 1TB in college junior year.",
     "image": "laptops/lenovo-c740.webp"
   },
   {
