@@ -44,7 +44,7 @@ export default function ItemCard({ item, category }: Props) {
           {title}
         </h3>
 
-        <DateRange released={item.released} acquired={item.acquired} sold={item.sold} />
+        <DateRange released={item.released} acquired={item.acquired} sold={item.sold} current={item.current} />
 
         {category === "cars" && (item as Car).color && (
           <ColorSwatch color={(item as Car).color!} />

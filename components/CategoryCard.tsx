@@ -41,7 +41,7 @@ export default function CategoryCard({ category, item, count }: Props) {
           {item && (item.acquired ?? item.released) && (
             <p className="text-xs text-zinc-400 mt-0.5">
               {formatMonth((item.acquired ?? item.released)!)}
-              {item.acquired && !item.sold && " – present"}
+              {item.acquired && !item.sold && item.current !== false && " – present"}
             </p>
           )}
         </div>

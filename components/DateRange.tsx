@@ -4,9 +4,11 @@ interface Props {
   released?: string;
   acquired?: string;
   sold?: string;
+  current?: boolean;
 }
 
-export default function DateRange({ released, acquired, sold }: Props) {
+export default function DateRange({ released, acquired, sold, current }: Props) {
+  const isPresent = !!acquired && !sold && current !== false;
   return (
     <div className="flex flex-col gap-0.5">
       {released && (
@@ -20,7 +22,9 @@ export default function DateRange({ released, acquired, sold }: Props) {
           <span className="mx-1.5">–</span>
           {sold
             ? formatMonth(sold)
-            : <span className="text-indigo-400">present</span>
+            : isPresent
+              ? <span className="text-indigo-400">present</span>
+              : <span className="text-zinc-600">unknown</span>
           }
           <span className="ml-2 text-zinc-600">
             ({computeDuration(acquired, sold)})
