@@ -17,7 +17,7 @@ export default function ImageWithFallback({ src, alt, className }: Props) {
       src={errored ? "/placeholder.svg" : src}
       alt={alt}
       fill
-      className={className ?? "object-cover"}
+      className={className ?? "object-contain"}
       onError={() => setErrored(true)}
       unoptimized
     />

@@ -1,4 +1,4 @@
-import type { Car, Phone, Laptop, Category } from "@/lib/types";
+import type { Car, Phone, Laptop } from "@/lib/types";
 import { getItemTitle } from "@/lib/utils";
 import DateRange from "./DateRange";
 import ColorSwatch from "./ColorSwatch";
@@ -19,7 +19,7 @@ function Badge({ children }: { children: React.ReactNode }) {
 
 export default function ItemCard({ item, category }: Props) {
   const title = getItemTitle(item, category);
-  const isCurrent = !item.sold;
+  const isCurrent = item.current !== false && !!item.acquired && !item.sold;
   const imageSrc = item.image ? `/images/${item.image}` : null;
 
   return (
@@ -31,12 +31,12 @@ export default function ItemCard({ item, category }: Props) {
       )}
 
       {/* Image */}
-      <div className="relative h-28 w-40 flex-shrink-0 overflow-hidden rounded-xl bg-zinc-800 sm:h-32 sm:w-48">
-        {imageSrc ? (
-          <ImageWithFallback src={imageSrc} alt={title} />
-        ) : (
-          <ImageWithFallback src="/placeholder.svg" alt={title} />
-        )}
+      <div className="relative h-32 w-40 flex-shrink-0 overflow-hidden rounded-xl bg-zinc-800 flex items-center justify-center sm:h-36 sm:w-52">
+        <ImageWithFallback
+          src={imageSrc ?? "/placeholder.svg"}
+          alt={title}
+          className="object-contain w-full h-full"
+        />
       </div>
 
       {/* Details */}
@@ -45,9 +45,8 @@ export default function ItemCard({ item, category }: Props) {
           {title}
         </h3>
 
-        <DateRange acquired={item.acquired} sold={item.sold} />
+        <DateRange released={item.released} acquired={item.acquired} sold={item.sold} />
 
-        {/* Category-specific details */}
         {category === "cars" && (item as Car).color && (
           <ColorSwatch color={(item as Car).color!} />
         )}

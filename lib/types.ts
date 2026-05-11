@@ -1,7 +1,9 @@
 export interface BaseItem {
   id: string;
-  acquired: string; // "YYYY-MM"
-  sold?: string;
+  released?: string; // "YYYY-MM" — official product launch date
+  acquired?: string; // "YYYY-MM" — when you personally got it
+  sold?: string;     // "YYYY-MM" — when you sold/stopped using it
+  current?: boolean; // set to false if sold but date unknown
   notes?: string;
   image?: string; // relative to public/images/, e.g. "cars/civic.jpg"
 }

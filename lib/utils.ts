@@ -32,6 +32,7 @@ export function getItemTitle(item: unknown, category: string): string {
   return String(i.id ?? "");
 }
 
-export function sortByAcquiredDesc<T extends { acquired: string }>(items: T[]): T[] {
-  return [...items].sort((a, b) => b.acquired.localeCompare(a.acquired));
+export function sortByAcquiredDesc<T extends { acquired?: string; released?: string }>(items: T[]): T[] {
+  const key = (item: T) => item.acquired ?? item.released ?? "";
+  return [...items].sort((a, b) => key(b).localeCompare(key(a)));
 }
