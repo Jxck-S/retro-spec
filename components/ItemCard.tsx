@@ -25,12 +25,6 @@ export default function ItemCard({ item, category }: Props) {
 
   return (
     <div className="group relative flex gap-4 rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-lg transition-all hover:border-zinc-700 hover:shadow-indigo-950/30 sm:gap-6">
-      {isCurrent && (
-        <span className="absolute right-4 top-4 rounded-full bg-indigo-500/20 px-2 py-0.5 text-xs font-medium text-indigo-400 ring-1 ring-indigo-500/30">
-          current
-        </span>
-      )}
-
       <div className="relative h-32 w-40 flex-shrink-0 overflow-hidden rounded-xl bg-white flex items-center justify-center sm:h-36 sm:w-52">
         <ImageWithFallback
           src={imageSrc ?? assetPath("/placeholder.svg")}
@@ -40,9 +34,16 @@ export default function ItemCard({ item, category }: Props) {
       </div>
 
       <div className="flex flex-col justify-center gap-2 min-w-0">
-        <h3 className="text-base font-semibold text-zinc-100 leading-tight">
-          {title}
-        </h3>
+        <div className="flex flex-wrap items-center gap-2">
+          <h3 className="text-base font-semibold text-zinc-100 leading-tight">
+            {title}
+          </h3>
+          {isCurrent && (
+            <span className="rounded-full bg-indigo-500/20 px-2 py-0.5 text-xs font-medium text-indigo-400 ring-1 ring-indigo-500/30 shrink-0">
+              current
+            </span>
+          )}
+        </div>
 
         <DateRange released={item.released} acquired={item.acquired} sold={item.sold} current={item.current} />
 
