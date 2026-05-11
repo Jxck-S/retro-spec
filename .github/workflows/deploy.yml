@@ -52,6 +52,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH || '' }}
+          NEXT_PUBLIC_REPO_URL: ${{ vars.NEXT_PUBLIC_REPO_URL || '' }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
