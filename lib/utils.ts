@@ -32,7 +32,7 @@ export function getItemTitle(item: unknown, category: string): string {
   if (category === "cars") {
     return `${i.year} ${i.make} ${i.model}${i.trim ? ` ${i.trim}` : ""}`;
   }
-  if (category === "phones" || category === "laptops") {
+  if (category === "phones" || category === "laptops" || category === "consoles") {
     return `${i.brand} ${i.model}`;
   }
   return String(i.id ?? "");

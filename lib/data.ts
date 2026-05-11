@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
 import { join } from "path";
-import type { Car, Phone, Laptop } from "./types";
+import type { Car, Phone, Laptop, Console } from "./types";
 import { sortByAcquiredDesc } from "./utils";
 
 function readJson<T>(file: string): T {
@@ -22,4 +22,8 @@ export function getPhones(): Phone[] {
 
 export function getLaptops(): Laptop[] {
   return sortByAcquiredDesc(readJson<Laptop[]>("laptops.json"));
+}
+
+export function getConsoles(): Console[] {
+  return sortByAcquiredDesc(readJson<Console[]>("consoles.json"));
 }

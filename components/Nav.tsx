@@ -8,6 +8,7 @@ const LINKS = [
   { href: "/cars", label: "Cars" },
   { href: "/phones", label: "Phones" },
   { href: "/laptops", label: "Laptops" },
+  { href: "/consoles", label: "Consoles" },
 ];
 
 export default function Nav() {

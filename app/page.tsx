@@ -1,10 +1,11 @@
-import { getCars, getPhones, getLaptops } from "@/lib/data";
+import { getCars, getPhones, getLaptops, getConsoles } from "@/lib/data";
 import CategoryCard from "@/components/CategoryCard";
 
 export default function Home() {
   const cars = getCars();
   const phones = getPhones();
   const laptops = getLaptops();
+  const consoles = getConsoles();
 
   return (
     <div>
@@ -17,10 +18,11 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <CategoryCard category="cars" item={cars[0] ?? null} count={cars.length} />
         <CategoryCard category="phones" item={phones[0] ?? null} count={phones.length} />
         <CategoryCard category="laptops" item={laptops[0] ?? null} count={laptops.length} />
+        <CategoryCard category="consoles" item={consoles[0] ?? null} count={consoles.length} />
       </div>
     </div>
   );

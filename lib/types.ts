@@ -35,5 +35,11 @@ export interface Laptop extends BaseItem {
   color?: string;
 }
 
-export type Category = "cars" | "phones" | "laptops";
-export type AnyItem = Car | Phone | Laptop;
+export interface Console extends BaseItem {
+  brand: string;   // "Nintendo", "Microsoft", "Sony"
+  model: string;   // "Wii", "Wii U", "Xbox One X"
+  color?: string;
+}
+
+export type Category = "cars" | "phones" | "laptops" | "consoles";
+export type AnyItem = Car | Phone | Laptop | Console;

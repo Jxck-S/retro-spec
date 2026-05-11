@@ -1,4 +1,4 @@
-import type { Car, Phone, Laptop } from "@/lib/types";
+import type { Car, Phone, Laptop, Console } from "@/lib/types";
 import { getItemTitle, assetPath } from "@/lib/utils";
 import DateRange from "./DateRange";
 import ColorSwatch from "./ColorSwatch";
@@ -7,7 +7,8 @@ import ImageWithFallback from "./ImageWithFallback";
 type Props =
   | { item: Car; category: "cars" }
   | { item: Phone; category: "phones" }
-  | { item: Laptop; category: "laptops" };
+  | { item: Laptop; category: "laptops" }
+  | { item: Console; category: "consoles" };
 
 function Badge({ children }: { children: React.ReactNode }) {
   return (
@@ -30,7 +31,6 @@ export default function ItemCard({ item, category }: Props) {
         </span>
       )}
 
-      {/* Image */}
       <div className="relative h-32 w-40 flex-shrink-0 overflow-hidden rounded-xl bg-zinc-800 flex items-center justify-center sm:h-36 sm:w-52">
         <ImageWithFallback
           src={imageSrc ?? assetPath("/placeholder.svg")}
@@ -39,7 +39,6 @@ export default function ItemCard({ item, category }: Props) {
         />
       </div>
 
-      {/* Details */}
       <div className="flex flex-col justify-center gap-2 min-w-0">
         <h3 className="text-base font-semibold text-zinc-100 leading-tight">
           {title}
@@ -63,6 +62,12 @@ export default function ItemCard({ item, category }: Props) {
             {(item as Laptop).chip && <Badge>{(item as Laptop).chip}</Badge>}
             {(item as Laptop).ram && <Badge>{(item as Laptop).ram}</Badge>}
             {(item as Laptop).storage && <Badge>{(item as Laptop).storage}</Badge>}
+          </div>
+        )}
+
+        {category === "consoles" && (item as Console).color && (
+          <div className="flex flex-wrap gap-1.5">
+            <Badge>{(item as Console).color}</Badge>
           </div>
         )}
 
