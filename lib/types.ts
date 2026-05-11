@@ -32,6 +32,8 @@ export interface Laptop extends BaseItem {
   chip?: string;
   ram?: string;
   storage?: string;
+  screen?: string;
+  serial?: string;
   color?: string;
 }
 

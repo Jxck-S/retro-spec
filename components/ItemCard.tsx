@@ -62,6 +62,8 @@ export default function ItemCard({ item, category }: Props) {
             {(item as Laptop).chip && <Badge>{(item as Laptop).chip}</Badge>}
             {(item as Laptop).ram && <Badge>{(item as Laptop).ram}</Badge>}
             {(item as Laptop).storage && <Badge>{(item as Laptop).storage}</Badge>}
+            {(item as Laptop).screen && <Badge>{(item as Laptop).screen}</Badge>}
+            {(item as Laptop).serial && <Badge>SN: {(item as Laptop).serial}</Badge>}
           </div>
         )}
 
