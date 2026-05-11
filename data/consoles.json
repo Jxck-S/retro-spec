@@ -3,18 +3,21 @@
     "id": "xbox-one-x",
     "brand": "Microsoft",
     "model": "Xbox One X",
-    "released": "2017-11"
+    "released": "2017-11",
+    "image": "consoles/xbox-one-x.webp"
   },
   {
     "id": "wii-u",
     "brand": "Nintendo",
     "model": "Wii U",
-    "released": "2012-11"
+    "released": "2012-11",
+    "image": "consoles/wii-u.webp"
   },
   {
     "id": "wii",
     "brand": "Nintendo",
     "model": "Wii",
-    "released": "2006-11"
+    "released": "2006-11",
+    "image": "consoles/wii.webp"
   }
 ]
