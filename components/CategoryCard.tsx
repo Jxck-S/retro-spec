@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Car, Phone, Laptop, Category } from "@/lib/types";
-import { getItemTitle, formatMonth } from "@/lib/utils";
+import { getItemTitle, formatMonth, assetPath } from "@/lib/utils";
 import ImageWithFallback from "./ImageWithFallback";
 
 const LABELS: Record<Category, string> = {
@@ -16,7 +16,7 @@ type Props =
 
 export default function CategoryCard({ category, item, count }: Props) {
   const title = item ? getItemTitle(item, category) : null;
-  const imageSrc = item?.image ? `/images/${item.image}` : null;
+  const imageSrc = item?.image ? assetPath(`/images/${item.image}`) : null;
 
   return (
     <Link
@@ -26,7 +26,7 @@ export default function CategoryCard({ category, item, count }: Props) {
       {/* Image area */}
       <div className="relative h-52 w-full bg-zinc-800 flex items-center justify-center overflow-hidden">
         <ImageWithFallback
-          src={imageSrc ?? "/placeholder.svg"}
+          src={imageSrc ?? assetPath("/placeholder.svg")}
           alt={title ?? LABELS[category]}
           className="object-contain w-full h-full"
         />

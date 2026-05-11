@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { assetPath } from "@/lib/utils";
 
 interface Props {
   src: string;
@@ -14,7 +15,7 @@ export default function ImageWithFallback({ src, alt, className }: Props) {
 
   return (
     <Image
-      src={errored ? "/placeholder.svg" : src}
+      src={errored ? assetPath("/placeholder.svg") : src}
       alt={alt}
       fill
       className={className ?? "object-contain"}

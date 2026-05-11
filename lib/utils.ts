@@ -1,3 +1,9 @@
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+export function assetPath(src: string): string {
+  return `${BASE}${src}`;
+}
+
 export function formatMonth(yyyyMm: string): string {
   const [year, month] = yyyyMm.split("-");
   const date = new Date(Number(year), Number(month) - 1, 1);
